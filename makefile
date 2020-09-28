@@ -1,3 +1,4 @@
+# Author: markendoej
 EXECUTABLE = fm_transmitter
 VERSION = 0.9.4
 FLAGS = -Wall -O3 -std=c++11
