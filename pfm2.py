@@ -343,7 +343,7 @@ def atSign():
     
 #Function to print the space
 def space():
-    print("/"),
+    print("\b/"),
 
 #For Merging Audio Files
 sequence = ["initial.wav"]
