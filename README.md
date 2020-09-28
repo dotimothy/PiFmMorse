@@ -1,4 +1,9 @@
 # PiFmMorse: A Morse Code FM Radio Transmitter for the Raspberry Pi
+## Procedure
+1. Run <code>sudo pfm.py</code> (If not it will ask for sudo password during program)
+2. Type Input in Morse Code
+3. After Audio Compilation, Select Frequency to Broadcast On.
+4. You're done, tune an FM-Frequency on the Radio to listen to your input!
 ## Notes: 
 1. This only works for Raspberry Pis with GPIO pins
 2. You need <code>sudo</code> permissions to run this program, as the FM transmitter requires you to have them. Please run <code>sudo pfm.py</code> beforehand.
