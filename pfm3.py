@@ -525,7 +525,7 @@ def prompt():
 
 #Welcome, and making the executable for FM Transmitter
 def main():
-	print("Welcome to PiFmMorse for Python 3!\n")
+	print("Welcome to PiFmMorse for Python 3! Transmit Morse Code over FM Frequencies with your Raspberry Pi!\n")
 	print("*******Compiling the FM Transmitter Executable*******\n")
 	os.system("sudo make")
 	print("\n*******Finish Compiling the FM Transmitter Executable*******")

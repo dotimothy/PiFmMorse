@@ -18,13 +18,13 @@ def pause(units):
 
 #Functions for Dots, Dashes
 def dot():
-    print(".", end="")
+    print("\b."),
     sequence.append("dot.wav")
     pause(1)
 
     
 def dash():
-    print("-", end="")
+    print("\b-"),
     sequence.append("dash.wav")
     pause(1)
     
@@ -358,7 +358,7 @@ def flipE():
 
 #Function to print the space
 def space():
-    print("/", end="")
+    print("/"),
 
 #For Merging Audio Files
 sequence = ["initial.wav"]
@@ -500,7 +500,7 @@ def printMorse(input):
             flipE()
         elif(characters == " "):
             space()
-        print(" ", end="")
+        print(" "),
         if(characters != " "):
         	pause(3)
         elif(characters == " "):
@@ -508,7 +508,7 @@ def printMorse(input):
 
 #User Prompt
 def prompt():
-    feed = input("\nType What You Want to Convert and Press Enter: ")
+    feed = raw_input("\nType What You Want to Convert and Press Enter: ")
     if(feed == ""):
         print("You Didn't Input Anything. Please Try Again.")
         prompt()
@@ -516,7 +516,7 @@ def prompt():
     print("Console Output:")
     printMorse(feed)
     compileOutput()
-    frequency = input("\n\nThe output audio has been compiled. Specify the frequency to broadcast your output: ")
+    frequency = raw_input("\n\nThe output audio has been compiled. Specify the frequency to broadcast your output: ")
     print("\nBroadcasting your output at " + str(frequency) + " mhz!\n")
     os.system("sudo ./fm -f " + str(frequency) + " output.wav")
     print("\nThe Output has been Broadcasted. Thank you for using PiFmMorse!")
@@ -525,7 +525,7 @@ def prompt():
 
 #Welcome, and making the executable for FM Transmitter
 def main():
-	print("Welcome to PiFmMorse for Python 3!\n")
+	print("Welcome to PiFmMorse for Python 2! Transmit Morse Code over FM Frequencies with your Raspberry Pi!\n")
 	print("*******Compiling the FM Transmitter Executable*******\n")
 	os.system("sudo make")
 	print("\n*******Finish Compiling the FM Transmitter Executable*******")
