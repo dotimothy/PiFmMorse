@@ -1,2 +1,2 @@
 # PiFmMorse: A Morse Code FM Radio Transmitter for the Raspberry Pi
-FM Transmitter Credits by markendoej
+Credits: Used the [FM Transmitter](https://github.com/markondej/fm_transmitter) Program created by [markendoej](https://github.com/markondej) to transmit the output wav file compiled in <code>pifmmorse.py</code>. 
