@@ -345,13 +345,6 @@ def atSign():
 def space():
     print("\b/"),
 
-#Function to end message
-def endMessage():
-    for i in range(2):
-        dot()
-        dash()
-    dot()
-
 #For Merging Audio Files
 sequence = ["initial.wav"]
 outframes = []
@@ -493,7 +486,6 @@ def printMorse(input):
         	pause(3)
         elif(characters == " "):
         	pause(7)
-    endMessage()
 
 #User Prompt
 def prompt():
