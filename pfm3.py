@@ -1,4 +1,4 @@
-#Author: Timothy Do
+python #Author: Timothy Do
 
 try: 
 	import RPi.GPIO
