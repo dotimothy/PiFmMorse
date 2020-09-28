@@ -499,7 +499,7 @@ def prompt():
     compileOutput()
     frequency = float(raw_input("\n\nThe output audio has been compiled. Specify the frequency to broadcast your output: "))
     print("\nBroadcasting your output at " + str(frequency) + " mhz!\n")
-    os.system("sudo ./fm -f " + str(frequency) + " output.wav")
+    os.system("sudo ./fm -f " + str(float(frequency)) + " output.wav")
     print("\nThe Output has been Broadcasted. Thank you for using PiFmMorse!")
     os.system("sudo rm output.wav")
     exit()
