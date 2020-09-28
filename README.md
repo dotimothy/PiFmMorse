@@ -3,7 +3,7 @@
 <img src="demo.gif"/>
 1. Run <code>sudo pfm.py</code> (If not it will ask for sudo password during program)
 <br>
-2. Type Input in Morse Code
+2. Type Input in Morse Code (Refer to [this chart](https://dotimothy.github.io/morse) for all possible characters)
 <br>
 3. After Audio Compilation, Select Frequency to Broadcast On.
 <br>
