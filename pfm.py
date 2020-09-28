@@ -13,5 +13,10 @@ print("*******Compiling the FM Transmitter Executable*******\n")
 os.system("sudo make")
 print("\n*******Finish Compiling the FM Transmitter Executable*******\n")
 
-sequence = []
-frames = []
+sequence = ["initial.wav"]
+outframes = []
+output = "output.wav"
+def compileOutput():
+	for i in sequence:
+		extract = wave.open(sequence, 'rb')
+		outframes.append([extract.getparams(),extract.readframes(extract.getnframes())]
