@@ -8,7 +8,7 @@
 3. After Audio Compilation, Select Frequency to Broadcast On.
 <br>
 4. You're done, tune an FM-Frequency on the Radio to listen to your input!
-<br>
+
 ## Notes: 
 1. This only works for Raspberry Pis with GPIO pins
 <br>
