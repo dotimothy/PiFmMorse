@@ -1,3 +1,4 @@
+# TESTING BRANCH IS FOR TESTING ONLY AND IS VERY UNSTABLE. SWITCH TO MASTER IMMEDIEATELY
 # PiFmMorse: A Morse Code FM Radio Transmitter for the Raspberry Pi
 ## Notes: 
 1. This only works for Raspberry Pis with GPIO pins
