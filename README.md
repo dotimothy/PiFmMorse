@@ -7,7 +7,7 @@
 5. Last but not least, make sure to follow FM transmissions guidelines for unlicensed transmission. If you are from the United States, you can read more about the FCC Guidlines [here](https://www.fcc.gov/media/radio/low-power-radio-general-information#UNLICENSED). In essence, don't interfere with occupied frequencies and make sure your transmissions doesn't extend over 200 ft (~60 meters).
 
 ## When trasmitting FM Signals, always use a Band Pass Filter!
-Credits: Used the [FM Transmitter](https://github.com/markondej/fm_transmitter) Program created by [markendoej](https://github.com/markondej) to transmit the output wav file compiled in <code>pifmmorse.py</code>.
+Credits: Used the [FM Transmitter](https://github.com/markondej/fm_transmitter) Program created by [markendoej](https://github.com/markondej) to transmit the output wav file compiled in <code>pfm.py</code>.
 ## Disclaimer: Please follow the guidelines in your country when broadcasting FM Signals and Morse Code. Use your Raspberry Pi legally and responsibly. 
 
 
