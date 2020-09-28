@@ -10,7 +10,8 @@
 <br>
 2. You need <code>sudo</code> permissions to run this program, as the FM transmitter requires you to have them. Please run <code>sudo pfm.py</code> beforehand.
 <br>
-3. Without any antenna, the broadcast is limited to an area of aroudn 10 cm. To extend your coverage, please attach a wire (~10 cm) to extend your range to a few meters.
+3. Without any antenna, the broadcast is limited to an area of around 10 cm. To extend your coverage, please attach a wire (~10 cm) to GPIO 4 (Pin 7), to extend your range to upto a few meters!
+<img src="setup.jpg/>
 <br>
 4. When doing FM Transmissions, always apply a Band-Pass Filter to prevent transmission leaks in the harmonics. 
 <br>
