@@ -11,7 +11,7 @@ except ModuleNotFoundError:
 import os
 import wave
 
-#Function to represent a time unit
+#Function to represent silence
 def pause(units):
 	for i in range(units):
 		sequence.append("silence.wav")
