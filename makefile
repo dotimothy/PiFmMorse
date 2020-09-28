@@ -1,5 +1,5 @@
 # Author: markendoej
-EXECUTABLE = fm_transmitter
+EXECUTABLE = fm
 VERSION = 0.9.4
 FLAGS = -Wall -O3 -std=c++11
 TRANSMITTER = -fno-strict-aliasing -I/opt/vc/include
