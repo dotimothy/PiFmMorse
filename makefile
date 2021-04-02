@@ -7,9 +7,13 @@ ifeq ($(GPIO21), 1)
 	TRANSMITTER += -DGPIO21
 endif
 
-all: main.o mailbox.o sample.o wave_reader.o transmitter.o
+all: main.o mailbox.o sample.o wave_reader.o transmitter.o pfm
 	g++ -L/opt/vc/lib -lm -lpthread -lbcm_host -o $(EXECUTABLE) main.o mailbox.o sample.o wave_reader.o transmitter.o
 
+pfm: pfm.py pfm2.py pfm3.py
+	cp pfm.py pfm 
+	chmod +x pfm
+	
 mailbox.o: mailbox.c mailbox.h
 	g++ $(FLAGS) -c mailbox.c
 
