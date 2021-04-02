@@ -7,7 +7,9 @@ ifeq ($(GPIO21), 1)
 	TRANSMITTER += -DGPIO21
 endif
 
-all: main.o mailbox.o sample.o wave_reader.o transmitter.o pfm
+all: fm pfm
+
+fm: main.o mailbox.o sample.o wave_reader.o transmitter.o 
 	g++ -L/opt/vc/lib -lm -lpthread -lbcm_host -o $(EXECUTABLE) main.o mailbox.o sample.o wave_reader.o transmitter.o
 
 pfm: pfm.py pfm2.py pfm3.py
@@ -30,4 +32,4 @@ main.o: main.cpp
 	g++ $(FLAGS) -DVERSION=\"$(VERSION)\" -DEXECUTABLE=\"$(EXECUTABLE)\" -c main.cpp
 
 clean:
-	rm *.o
+	rm -rf *.o fm pfm

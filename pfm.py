@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Author Timothy Do 
 try: 
 	import pfm3
