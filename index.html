@@ -1,25 +1,33 @@
-<h1 id="pifmmorse-a-morse-code-fm-radio-transmitter-for-the-raspberry-pi">PiFmMorse: A Morse Code FM Radio Transmitter for the Raspberry Pi</h1>
-<h2 id="procedure">Procedure</h2>
-<p><img src="demo.gif"/></p>
-<ol>
-<li>Run <code>sudo pfm.py</code> (If not it will ask for sudo password during program)
-<br></li>
-<li>Type Input in Morse Code (Refer to <a href="https://dotimothy.github.io/morse">this chart</a> for all possible characters)
-<br></li>
-<li>After Audio Compilation, Select Frequency to Broadcast On.
-<br></li>
-<li>You&#39;re done, tune an FM-Frequency on the Radio to listen to your input!</li>
-</ol>
-<h2 id="notes-">Notes:</h2>
-<ol>
-<li>This only works for Raspberry Pis with GPIO pins</li>
-<li>You need <code>sudo</code> permissions to run this program, as the FM transmitter requires you to have them. Please run <code>sudo pfm.py</code> beforehand.</li>
-<li>Without any antenna, the broadcast is limited to an area of around 10 cm. To extend your coverage, please attach a wire (~10 cm) to GPIO 4 (Pin 7), to extend your range to upto a few meters!
-<img src="setup.jpg" width="480px"/></li>
-<li>When doing FM Transmissions, always apply a Band-Pass Filter to prevent transmission leaks in the harmonics.
-<br></li>
-<li>Last but not least, make sure to follow FM transmissions guidelines for unlicensed transmission. If you are from the United States, read the FCC guidelines on Low Power Radio, <a href="https://www.fcc.gov/media/radio/low-power-radio-general-information" target="__blank"> Part 15</a>. In essence, don&#39;t interfere with occupied frequencies and make sure your transmissions doesn&#39;t extend over 200 ft (~60 meters).</li>
-</ol>
-<h2 id="when-trasmitting-fm-signals-always-use-a-band-pass-filter-https-www-electronics-tutorials-ws-filter-filter_4-html-">When trasmitting FM Signals, always use a <a href="https://www.electronics-tutorials.ws/filter/filter_4.html">Band Pass Filter</a>!</h2>
-<p>Credits: Used the <a href="https://github.com/markondej/fm_transmitter">FM Transmitter</a> Program created by <a href="https://github.com/markondej">markendoej</a> to transmit the output wav file compiled in <code>pfm.py</code>.</p>
-<h2 id="disclaimer-please-follow-the-guidelines-in-your-country-when-broadcasting-fm-signals-and-morse-code-use-your-raspberry-pi-legally-and-responsibly-">Disclaimer: Please follow the guidelines in your country when broadcasting FM Signals and Morse Code. Use your Raspberry Pi legally and responsibly.</h2>
+<style>
+  * {
+    font-family: Courier;
+  }
+</style>
+<body>
+  <h1 id="pifmmorse-a-morse-code-fm-radio-transmitter-for-the-raspberry-pi">PiFmMorse: A Morse Code FM Radio Transmitter for the Raspberry Pi</h1>
+  <h2 id="procedure">Procedure</h2>
+  <p><img src="demo.gif"/></p>
+  <ol>
+  <li>Run <code>sudo pfm.py</code> (If not it will ask for sudo password during program)
+  <br></li>
+  <li>Type Input in Morse Code (Refer to <a href="https://dotimothy.github.io/morse">this chart</a> for all possible characters)
+  <br></li>
+  <li>After Audio Compilation, Select Frequency to Broadcast On.
+  <br></li>
+  <li>You&#39;re done, tune an FM-Frequency on the Radio to listen to your input!</li>
+  </ol>
+  <h2 id="notes-">Notes:</h2>
+  <ol>
+  <li>This only works for Raspberry Pis with GPIO pins</li>
+  <li>You need <code>sudo</code> permissions to run this program, as the FM transmitter requires you to have them. Please run <code>sudo pfm.py</code> beforehand.</li>
+  <li>Without any antenna, the broadcast is limited to an area of around 10 cm. To extend your coverage, please attach a wire (~10 cm) to GPIO 4 (Pin 7), to extend your range to upto a few meters!
+  <br>
+  <img src="setup.jpg" width="480px"/></li>
+  <li>When doing FM Transmissions, always apply a Band-Pass Filter to prevent transmission leaks in the harmonics.
+  <br></li>
+  <li>Last but not least, make sure to follow FM transmissions guidelines for unlicensed transmission. If you are from the United States, read the FCC guidelines on Low Power Radio, <a href="https://www.fcc.gov/media/radio/low-power-radio-general-information" target="__blank"> Part 15</a>. In essence, don&#39;t interfere with occupied frequencies and make sure your transmissions doesn&#39;t extend over 200 ft (~60 meters).</li>
+  </ol>
+  <h2 id="when-trasmitting-fm-signals-always-use-a-band-pass-filter-https-www-electronics-tutorials-ws-filter-filter_4-html-">When trasmitting FM Signals, always use a <a href="https://www.electronics-tutorials.ws/filter/filter_4.html">Band Pass Filter</a>!</h2>
+  <p>Credits: Used the <a href="https://github.com/markondej/fm_transmitter">FM Transmitter</a> Program created by <a href="https://github.com/markondej">markendoej</a> to transmit the output wav file compiled in <code>pfm.py</code>.</p>
+  <h2 id="disclaimer-please-follow-the-guidelines-in-your-country-when-broadcasting-fm-signals-and-morse-code-use-your-raspberry-pi-legally-and-responsibly-">Disclaimer: Please follow the guidelines in your country when broadcasting FM Signals and Morse Code. Use your Raspberry Pi legally and responsibly.</h2>
+</body>
